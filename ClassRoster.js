@@ -9,8 +9,10 @@ const handleSubmit = (ev) =>{
 function addToList (name){
     var ul = document.getElementById("output")
     var li = document.createElement('li')
-    li.textContent = name
-
+    var button = document.createElement('button')
+    button.innerText = 'Delete'
+    li.textContent = name + ''
+    li.appendChild(button)
     ul.insertBefore(li,ul.childNodes[0])
 
     return
