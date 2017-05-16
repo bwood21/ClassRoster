@@ -10,7 +10,9 @@ const handleSubmit = (ev) =>{
 const secondSubmit = (ew) =>{
     ew.preventDefault
     const form = ew.target
-    alert("W")
+    form.parentNode.parentNode.removeChild(form.parentNode)
+    //form.id = name
+
 }
 function addToList (name){
     var ul = document.getElementById("output")
