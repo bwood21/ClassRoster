@@ -1,5 +1,4 @@
 const items = document.querySelector("form")
-const button2 = document.querySelector("div")
 const handleSubmit = (ev) =>{
     ev.preventDefault()
     const form = ev.target
