@@ -1,5 +1,4 @@
 const items = document.querySelector("form")
-
 const handleSubmit = (ev) =>{
     ev.preventDefault()
     const form = ev.target
@@ -11,6 +10,10 @@ function addToList (name){
     var ul = document.getElementById("output")
     var li = document.createElement('li')
     li.textContent = name
-    ul.appendChild(li)
+
+    ul.insertBefore(li,ul.childNodes[0])
+
+    return
+    
 }
 items.addEventListener('submit',handleSubmit)
