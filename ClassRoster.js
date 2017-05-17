@@ -1,4 +1,4 @@
-const items = document.querySelector("form")
+{const items = document.querySelector("form")
 let counter=0;
 const handleSubmit = (ev) =>{
     ev.preventDefault()
@@ -60,4 +60,4 @@ function addToList (name){
     
 }
 items.addEventListener('submit',handleSubmit)
-
+}
